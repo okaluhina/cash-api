@@ -4,8 +4,8 @@ const getMain = async (req, res, next) => {
   try {
     return res.status(status.OK).json({
       info: [
-        { name: 'name13', count: '13' },
-        { name: 'name23', count: '23' }
+        { name: 'name14', count: '14' },
+        { name: 'name24', count: '24' }
       ]
     });
   } catch (error) {
