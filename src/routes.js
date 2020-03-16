@@ -1,6 +1,8 @@
 import { Router } from 'express';
 import { version } from '../package.json';
 import mainRouter from './api/main';
+import secondRouter from './api/second';
+
 
 const router = Router();
 
@@ -15,5 +17,7 @@ router.get('/', (req, res) => {
 });
 
 router.use('/main', mainRouter);
+router.use('/second', secondRouter);
+
 
 export default router;
